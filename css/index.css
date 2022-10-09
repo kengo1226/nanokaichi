@@ -489,6 +489,10 @@ nav li a {
   }
 
   /* お問い合わせbottom部分 */
+  #contact {
+    padding-top: 4%;
+  }
+
   #contact h3 {
     color: #661919;
     text-align: center;
