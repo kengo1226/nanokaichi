@@ -122,11 +122,10 @@ nav li a {
 
 #hero .overlay-txt {
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 100%;
   z-index: 1;
   text-align: center;
   color: #fff;
@@ -203,20 +202,23 @@ nav li a {
 
 #services .about,
 #services .food,
-#services .flow {
+#services .flow,
+#services .event {
   display: flex;
   width: 100%;
 }
 
 #services .about .about-img,
 #services .food .food-img,
-#services .flow .flow-img {
+#services .flow .flow-img,
+#services .event .event-img {
   width: 50%;
 }
 
 #services .about img,
 #services .food img,
-#services .flow img {
+#services .flow img,
+#services .event img {
   display: flex;
   width: 100%;
 }
@@ -291,6 +293,31 @@ nav li a {
 }
 
 #services .flow .flow-content a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+#services .event .event-content {
+  background: #54b435;
+  color: #fff;
+  width: 50%;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#services .event .event-content h3 {
+  font-size: 33px;
+}
+
+#services .event .event-content p {
+  font-size: 16px;
+}
+
+#services .event .event-content a {
   color: #fff;
   text-decoration: underline;
   font-size: 18px;
@@ -394,42 +421,6 @@ nav li a {
   #header nav .menus {
     width: 75%;
   }
-
-  /* about section */
-  #about .about-box {
-    display: block;
-  }
-
-  #about .about-box .about-img,
-  #about .about-box .about-txt {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5%;
-  }
-
-  #about .about-box .about-img img {
-    width: 100%;
-  }
-
-  #about .about-box .about-txt p {
-    margin-bottom: 5%;
-  }
-
-  /* middle */
-  #middle .middle-box {
-    display: block;
-  }
-
-  #middle .middle-box .food,
-  #middle .middle-box .flow {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  #middle .middle-box .food-img img,
-  #middle .middle-box .flow-img img {
-    width: 100%;
-  }
 }
 
 /* スマホ */
@@ -518,6 +509,15 @@ nav li a {
     display: none;
   }
 
+  #hero .swiper {
+    height: 75vw;
+  }
+
+  #hero .swiper img {
+    height: 75vw;
+    object-fit: cover;
+  }
+
   /* お問い合わせbottom部分 */
   #contact {
     padding-top: 4%;
@@ -573,53 +573,62 @@ nav li a {
     display: block;
   }
 
-  #services .food {
+  #services .food,
+  #services .event {
     flex-direction: column-reverse;
   }
 
   #services .about .about-img,
   #services .food .food-img,
   #services .flow .flow-img,
+  #services .event .event-img,
   #services .about .about-content,
   #services .food .food-content,
-  #services .flow .flow-content {
+  #services .flow .flow-content,
+  #services .event .event-content {
     width: 100%;
   }
 
   #services .about .about-img img,
   #services .food .food-img img,
-  #services .flow .flow-img img {
+  #services .flow .flow-img img,
+  #services .event .event-img img {
     height: 51vw;
     object-fit: cover;
   }
 
   #services .about .about-content,
   #services .food .food-content,
-  #services .flow .flow-content {
+  #services .flow .flow-content,
+  #services .event .event-content {
     height: 50vw;
   }
 
   #services .about .about-content,
   #services .food .food-content,
-  #services .flow .flow-content {
+  #services .flow .flow-content,
+  #services .event .event-content {
     padding: 3%;
   }
 
   #services .about .about-content h3,
   #services .food .food-content h3,
-  #services .flow .flow-content h3 {
+  #services .flow .flow-content h3,
+  #services .event .event-content h3 {
     font-size: 5.5vw;
   }
 
   #services .about .about-content p,
   #services .food .food-content p,
-  #services .flow .flow-content p {
+  #services .flow .flow-content p,
+  #services .event .event-content p {
     font-size: 3.5vw;
   }
 
   #services .about .about-content a,
   #services .food .food-content a,
-  #services .flow .flow-content a {
+  #services .flow .flow-content a,
+  #services .event .event-content a {
     font-size: 4.2vw;
   }
   /* ====== services ====== */
