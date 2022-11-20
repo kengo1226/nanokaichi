@@ -6,12 +6,32 @@
 /* hero */
 #hero {
   width: 100%;
+  height: auto;
+  position: relative;
 }
 
 #hero img {
   width: 100%;
-  height: 450px;
+  height: 375px;
   object-fit: cover;
+}
+
+#hero .sub-overlay {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+#hero .sub-overlay h3 {
+  font-size: 45px;
+}
+
+#hero .sub-overlay p {
+  font-size: 20px;
 }
 
 /* about */
@@ -233,15 +253,36 @@
     display: none;
   }
 
+  #hero {
+    height: 50vw;
+    position: relative;
+  }
+
+  #hero img {
+    height: 100%;
+  }
+
+  #hero .sub-overlay h3 {
+    font-size: 6.5vw;
+  }
+
+  #hero .sub-overlay p {
+    font-size: 4vw;
+  }
+
+  #about-section .about-text p {
+    font-size: 3.25vw;
+  }
+
   #houshin h3,
   #mokuhyo h3,
   #detail h3 {
     font-size: 7.2vw;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
   }
 
   #about-section h3 {
-    font-size: 1.1rem;
+    font-size: 4vw;
     padding-top: 5%;
   }
 
@@ -276,27 +317,45 @@
   }
 
   #houshin .houshin-box li {
-    font-size: 1rem;
+    font-size: 4vw;
     margin-bottom: 6%;
   }
 
   /* 目標セクション */
   #mokuhyo .mokuhyo-box li {
-    font-size: 1rem;
-    margin-bottom: 6%;
+    font-size: 4vw;
+    margin-bottom: 4%;
+  }
+
+  #mokuhyo .mokuhyo-box li:last-of-type {
+    margin-bottom: 0;
   }
 
   #mokuhyo p {
-    font-size: 1rem;
+    font-size: 4vw;
     text-align: left;
   }
 
   /* 園の概要 */
+  #detail {
+    padding-bottom: 6%;
+  }
+
+  #detail table {
+    border-color: #f3f3f3;
+  }
+
   #detail table th {
     display: block;
+    font-size: 4vw;
   }
 
   #detail table td {
     display: block;
+    font-size: 4vw;
+  }
+
+  #images {
+    padding-bottom: 6%;
   }
 }
