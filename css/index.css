@@ -60,6 +60,11 @@ nav li a {
   border-radius: 18px;
 }
 
+#header .name a {
+  color: #661919;
+  font-weight: bold;
+}
+
 #header nav .menus {
   display: flex;
   justify-content: space-evenly;
@@ -441,6 +446,11 @@ nav li a {
   #header nav {
     width: 90%;
     padding: 0;
+  }
+
+  #header .mobile-menu h1 a {
+    color: #661919;
+    font-weight: bold;
   }
 
   #header nav .name {

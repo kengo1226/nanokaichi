@@ -283,11 +283,11 @@
 
   #about-section h3 {
     font-size: 4vw;
-    padding-top: 5%;
+    padding-top: 8%;
   }
 
   #about-section .gaikan {
-    padding: 5% 0;
+    padding: 7% 0;
   }
 
   #about-section .gaikan img {
@@ -297,7 +297,7 @@
   #about-section .about-text {
     width: 100%;
     font-size: 1rem;
-    padding-bottom: 10%;
+    padding-bottom: 12%;
   }
 
   #about-section .long-img img {
@@ -308,7 +308,7 @@
 
   /* housin */
   #houshin {
-    padding: 7% 0;
+    padding: 9% 0;
   }
 
   #houshin .houshin-box,
@@ -322,6 +322,11 @@
   }
 
   /* 目標セクション */
+
+  #mokuhyo {
+    padding-bottom: 9%;
+  }
+
   #mokuhyo .mokuhyo-box li {
     font-size: 4vw;
     margin-bottom: 4%;
